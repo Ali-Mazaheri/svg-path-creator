@@ -1,0 +1,75 @@
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  border: solid 1px black;
+  
+}
+
+.point {
+  fill: #0000ff10;
+  cursor: move;
+}
+
+.point.helperNode {
+  fill: #ffff0035;
+}
+
+.selectedNode:not(.helperNode):not(.baseNode) {
+  fill: green;
+}
+
+.main {
+  display: flex;
+  user-select: none;
+}
+.canvas {
+  padding: 10px;
+  height:500px;
+  flex: 0 0 500px;
+}
+.control {
+  padding: 10px;
+  flex: 0 0 150px;
+  flex-direction: column;
+  display: flex;
+}
+.control > * {
+  flex: 0 0 15px;
+  margin: 4px;
+}
+.pathValue {
+  clear: both;
+}
+
+p {
+  color: orangered;
+  font-size: 13px;
+}
+
+#div {
+  padding: 1px 10px;
+  font-size: 15px;
+  color: navy;
+}
+
+button {
+  border: solid 1px gray;
+  outline: none;
+  box-shadow: 2px 2px 2px black;
+}
+
+button:active {
+  border: solid 1px gray;
+  outline: none;
+  box-shadow: 2px 2px 0px black;
+}
+
+.baseNode{
+  fill: gray;
+}
+
+.hide{display: none;}

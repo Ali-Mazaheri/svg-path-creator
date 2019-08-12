@@ -1,0 +1,67 @@
+<div class="main">
+	<div class="canvas">
+		<svg width="500" height="500" viewbox="0 0 500 500" id="svg1">
+			<defs>
+				<pattern id="Pattern" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse">
+					<Line x1="0" y1="0" x2="25" y2="0" stroke="gray" stroke-width="1"></Line>
+					<Line x1="0" y1="0" x2="0" y2="25" stroke="gray" stroke-width="1"></Line>
+				</pattern>
+			</defs>
+      <rect id="gridContainer" width="500" height="500" fill="url(#Pattern)" />
+			<path id="path" stroke="black" fill="none" stroke-width="2" d="" />
+      <g id="guideContainer" class="guideContainer">
+        <path id="helperPath" stroke-dasharray="2 5" stroke="brown" fill="none" stroke-width="2" d="" />
+      </g>
+      
+		</svg>
+	</div>
+	<div class="control">
+		<button id="btnClear">clear all</button>
+    <button id="btnRemove">remove selected point</button>
+    <br/>
+
+    <span>
+      <input id="radLine" type="radio" name="path" value="Line" checked/>
+      <label for="radLine">Line</label>
+    </span>
+    <span>
+      <input id="radQuad" type="radio" name="path" value="Quad"/>
+      <label for="radQuad">Quadratic  Curve</label>
+    </span>
+    <span>
+      <input id="radCube" type="radio" name="path" value="Cube"/> 
+      <label for="radCube">Bezier Curve </label>
+    </span>
+    <!-- <span>
+      <input id="radArc" type="radio" name="path" value="Arc"/> 
+      <label for="radArc">Arc </label>
+    </span> -->
+    <br/>
+    <span>
+      <input id="showGuide" type="checkbox" checked/> 
+      <label for="showGuide">Show Guides </label>
+    </span>
+    <span>
+      <input id="showGrid" type="checkbox" checked/> 
+      <label for="showGrid">Show Grid </label>
+    </span>
+    <br>
+    <p>
+      Click on the grid to add a new node
+    </p>
+
+    <p>
+      Click on a node to delete
+    </p>
+    
+    <p>
+      Drag a node to modify
+    </p>
+</div>
+</div>
+<div class="pathValue">
+
+<div id="div">
+  
+</div>
+</div>
