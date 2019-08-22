@@ -12,7 +12,7 @@ PointStore.notify = () => {
 
 showGuide.onclick = function (e) {
   if (showGuide.checked) {
-    guideContainer.classList.remove("hide"); _
+    guideContainer.classList.remove("hide");
   } else {
     guideContainer.classList.add("hide");
   }
@@ -20,7 +20,7 @@ showGuide.onclick = function (e) {
 
 showGrid.onclick = function (e) {
   if (showGrid.checked) {
-    gridContainer.classList.remove("hide"); _
+    gridContainer.classList.remove("hide");
   } else {
     gridContainer.classList.add("hide");
   }
